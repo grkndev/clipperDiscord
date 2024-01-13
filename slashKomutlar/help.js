@@ -25,7 +25,7 @@ module.exports = {
           name: "`/clip <clip_url>`",
           value:
             "Converts the entered Twitch Clip url into a downloadable video",
-          inline: true,
+          inline: false,
         },
 
         {
@@ -44,15 +44,9 @@ module.exports = {
           name: "`/search userId <user_id>`",
           value: "Searches for a specific existing channel with the ID you enter",
           inline: true,
-        },
-
-        {
-          name: "`/yardım`",
-          value: "Yardım menüsünü açar",
-          inline: true,
-        },
+        }
       ])
-      .setColor(Colors.Yellow)
+      .setColor(Colors.Purple)
       .setThumbnail(client.user.avatarURL())
       .setTimestamp();
 
